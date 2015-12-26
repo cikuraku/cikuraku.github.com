@@ -1,24 +1,27 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2013-06-05 17:06:25
-categories: jekyll update
+title:  "metaprograming on ruby, part 1"
+date:   2015-12-26 10:28:00
+categories: ruby
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
-
-Jekyll also offers powerful support for code snippets:
+a quick reminder about the ruby classes and the instances, how to idenfity them
 
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
+
+class MyClass
+  def my_method
+    @v = 1
+  end
 end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+
+obj = MyClass.new
+obj.class # => MyClass
+obj.my_method
+
+obj.instance_variables # => [:@v]
+obj.instance_methods == "abc".methods #true
+obj.superclass
+obj.ancestors
+obj.methods.grep(/my/) # => [:my_method]
 {% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
