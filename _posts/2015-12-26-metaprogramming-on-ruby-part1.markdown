@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "metaprograming on ruby, part 1"
+title:  "metaprogramming on ruby, part 1"
 date:   2015-12-26 10:28:00
 categories: ruby
 ---
