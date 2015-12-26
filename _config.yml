@@ -1,10 +1,19 @@
-name: cikuraku's notepad
-url: http://cikuraku.github.io
-description: stream about linux, programing , fund and profit
-gems: [jekyll-paginate]
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-permalink: /:year/:month/:day/:title/
-paginate: 10
-highlighter: pygments
+# Site settings
+title: cikuraku's notepad
+email: cikuraku@noemail.com
+description: > # this means to ignore newlines until "baseurl:"
+  writings about linux, programming, other simply things
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://cikuraku.github.io" # the base hostname & protocol for your site
+twitter_username: cikuraku1232
+github_username:  cikuraku
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+# Build settings
+markdown: kramdown
